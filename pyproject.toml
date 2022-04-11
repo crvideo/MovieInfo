@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "getmovieinfo"
+version = "0.1.3"
+description = "Package to search specific video or keyword on a set of av websites"
+authors = ["crvidoeVR"]
+license = "MIT"
+readme = "README.md"
+
+repository = "https://github.com/crvideo/MovieInfo"
+keywords = ["movie","scaper","torrent scaper"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+packages = [{ include = "getmovieinfo" }]
+include = ["CHANGELOG.md"]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+selenium = "^4.1.3"
+requests = "^2.27.1"
+lxml = "^4.8.0"
+argparse = "^1.4.0"
+jsons = "^1.6.1"
+
+
+[tool.poetry.dev-dependencies]
+
+
+[tool.poetry.scripts]
+MovieInfo = "getmovieinfo.MovieInfo:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
