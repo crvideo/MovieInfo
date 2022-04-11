@@ -5,7 +5,9 @@ MovieInfo is a tool to search specific number or keyword from a set of av and ge
 
 ### Installation
 
-`pip install getmovieinfo
+```bash
+pip install getmovieinfo
+```
 
 ### Requirements
 
@@ -25,9 +27,12 @@ MovieInfo is a tool to search specific number or keyword from a set of av and ge
 
 ### Usage
 
-`MovieInfo --number SSIS-356
+```bash
+MovieInfo --number SSIS-356
 
-`MovieInfo --keyword 涼森れむ
+MovieInfo --keyword 涼森れむ
+```
+
 
 #### Parameters
 
