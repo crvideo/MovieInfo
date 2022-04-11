@@ -55,4 +55,6 @@ This project is based on [Movie_data_Capture](https://github.com/yoshiko2/Movie_
 
 I implement a keyword searching and standardize the infomation extractor from html.
 
-I update crawler to substitue python requests to selenium to load js on a web to extract torrent infomation. This slow each request very much. 
+I update crawler to substitue python requests;
+
+Selenium is great at loading js on a web and enable the extracttion of torrent/magnet infomation. However this slows each request very much. Pay attention if you use this script to do massive query.
