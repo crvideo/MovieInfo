@@ -37,7 +37,7 @@ def main():
         if not os.path.exists(args.cache_dir):
             os.makedirs(args.cache_dir,exist_ok=True)
         if not os.path.exists(args.cache_dir + "/" + args.keyword+".json"):
-            for dbname in ["Javdb","Javbus"]:
+            for dbname in ["Javbus","Javdb"]:
                 res = db.registered_db.get(dbname).searchKeyword(args.keyword)
                 if res and res[0]["title"]:
                     with io.open(args.cache_dir + "/" + args.keyword + ".json","w",encoding='utf8') as f:
